@@ -2,121 +2,372 @@
 <html lang="en">
 
 <head>
-  <!-- Meta tags untuk pengaturan dasar halaman -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Portfolio of Juan Kenta Haryanto, Flutter Developer with experience in enterprise mobile apps for POS, logistics, building management, finance, and realtime communication systems.">
+  <meta name="keywords" content="Juan Kenta Haryanto, Flutter Developer, Mobile Developer, Dart, Android, iOS, Portfolio">
+  <meta name="author" content="Juan Kenta Haryanto">
 
-  <!-- Judul halaman -->
-  <title>Juan - Flutter Developer</title>
+  <title>Juan Kenta Haryanto - Flutter Developer</title>
 
-  <!-- Favicon dan Font -->
   <link href="assets/img/logo.png" rel="icon">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-  <!-- CSS eksternal -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    .hero-image-container {
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-    }
-
-    .hero-image-container img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Navigasi utama -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar" id="navbar">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a class="navbar-brand" href="#home" aria-label="Juan Kenta Portfolio">
+        <span class="brand-mark">JK</span>
+        <span class="brand-text">Juan Kenta</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon-custom"></span>
+        <span class="navbar-toggler-icon-custom"></span>
+        <span class="navbar-toggler-icon-custom"></span>
       </button>
 
-      <div class="logo">
-        <img src="assets/img/logo.png" class="logo">
-      </div>
-      <h3 class="ms-3">Juan</h3>
-
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="intro-single mt-5 pt-5">
-    <div class="container text-center">
-<p>&nbsp;&nbsp;&nbsp;</p>
+  <main>
+    <section id="home" class="hero-section section-padding">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <p class="eyebrow">Flutter Developer • Android & iOS</p>
+            <h1>Building enterprise mobile apps with clean architecture and practical product thinking.</h1>
+            <p class="hero-description">
+              Saya Flutter Developer dengan pengalaman 2+ tahun membangun aplikasi mobile untuk POS, logistics,
+              building management, finance document management, dan realtime communication system.
+            </p>
 
-      <h1 class="display-4">Hi, I'm Juan</h1>
-      <p class="lead">A passionate Flutter Developer crafting beautiful and functional mobile apps</p>
-      <div class="hero-image-container">
-        <!-- Gambar utama yang dibungkus agar proporsional -->
-        <img src="assets/img/slide1.avif" alt="Profile Hero">
-      </div>
-    </div>
-  </header>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary-custom">View Projects</a>
+              <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+            </div>
 
-  <!-- Bagian Tentang Saya -->
-  <section class="section-about mt-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="hero-image-container">
-            <!-- Gambar profil dibungkus agar seragam ukurannya -->
-            <img src="assets/img/slide2.avif" alt="About Juan">
+            <div class="hero-stats" aria-label="Professional highlights">
+              <div>
+                <strong>2+ Years</strong>
+                <span>Mobile Development</span>
+              </div>
+              <div>
+                <strong>5+ Apps</strong>
+                <span>Enterprise Projects</span>
+              </div>
+              <div>
+                <strong>Android & iOS</strong>
+                <span>Flutter Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="profile-card">
+              <div class="profile-card-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="profile-card-body">
+                <p class="code-comment">// Core focus</p>
+                <pre><code>const developer = {
+  name: "Juan Kenta Haryanto",
+  role: "Flutter Developer",
+  stack: ["Flutter", "Dart", "REST API", "WebSocket"],
+  architecture: ["Clean Architecture", "BLoC", "Provider"],
+  experience: ["POS", "Logistics", "BMS", "Finance"]
+};</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h2>About Me</h2>
-          <p>Saya adalah seorang Flutter Developer dengan pengalaman 2 tahun dalam membangun aplikasi mobile multiplatform dengan desain modern dan fungsionalitas tinggi.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding bg-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Mobile developer focused on business-critical applications.</h2>
+        </div>
+
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-7">
+            <p class="section-text">
+              Saya terbiasa mengembangkan dan maintenance aplikasi mobile production berbasis Flutter untuk kebutuhan
+              enterprise. Fokus saya bukan hanya membuat UI berjalan, tapi memastikan flow aplikasi mudah dipakai,
+              struktur code rapi, integrasi API stabil, dan fitur tetap maintainable saat project berkembang.
+            </p>
+            <p class="section-text">
+              Area yang sering saya handle meliputi integrasi REST API, WebSocket, state management, debugging,
+              optimization, role-based feature, upload media, dan deployment Android/iOS.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="highlight-box">
+              <h3>What I bring</h3>
+              <ul class="check-list">
+                <li>Experience building enterprise mobile apps</li>
+                <li>Clean Architecture mindset</li>
+                <li>REST API and realtime feature integration</li>
+                <li>Practical debugging and maintenance skill</li>
+                <li>Basic native Android experience with Java background service</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-light text-center py-3 mt-5">
-    <div class="container">
-      <p>&copy; 2025 Juan. All rights reserved.</p>
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Stack and capabilities</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="bi bi-phone"></i>
+            <h3>Mobile Development</h3>
+            <p>Flutter, Dart, Android, iOS, responsive mobile UI, app lifecycle, production maintenance.</p>
+          </div>
+          <div class="skill-card">
+            <i class="bi bi-diagram-3"></i>
+            <h3>Architecture</h3>
+            <p>Clean Architecture, modular structure, Repository Pattern, separation of concerns.</p>
+          </div>
+          <div class="skill-card">
+            <i class="bi bi-arrow-left-right"></i>
+            <h3>Integration</h3>
+            <p>REST API, WebSocket, JSON parsing, authentication flow, upload image/document.</p>
+          </div>
+          <div class="skill-card">
+            <i class="bi bi-layers"></i>
+            <h3>State Management</h3>
+            <p>BLoC and Provider based on project complexity and maintainability needs.</p>
+          </div>
+          <div class="skill-card">
+            <i class="bi bi-tools"></i>
+            <h3>Maintenance</h3>
+            <p>Debugging, performance optimization, feature improvement, bug fixing, app store release support.</p>
+          </div>
+          <div class="skill-card">
+            <i class="bi bi-code-slash"></i>
+            <h3>Native Support</h3>
+            <p>Basic Android Native Java experience, especially for background service use cases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-soft">
+      <div class="container">
+        <div class="section-heading d-flex flex-column flex-lg-row justify-content-between gap-3">
+          <div>
+            <p class="eyebrow">Professional Projects</p>
+            <h2>Case studies from production-level work</h2>
+          </div>
+          <p class="section-note">
+            Source code and internal data are not shared due to confidentiality. These summaries describe role,
+            features, and technologies at a safe level.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span>POS / Retail / Restaurant</span>
+              <i class="bi bi-receipt"></i>
+            </div>
+            <h3>VireoPOS</h3>
+            <p>Aplikasi POS untuk mendukung transaksi kasir, order, pembayaran, manajemen meja, split bill, dan operasional restoran/retail.</p>
+            <ul>
+              <li>Developed transaction and ordering flows</li>
+              <li>Integrated backend REST APIs</li>
+              <li>Handled cart/order state management</li>
+              <li>Maintained and improved existing production features</li>
+            </ul>
+            <div class="tag-list"><span>Flutter</span><span>Dart</span><span>REST API</span><span>State Management</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Building Management</span>
+              <i class="bi bi-building"></i>
+            </div>
+            <h3>BMS / BMX Resident & Staff App</h3>
+            <p>Aplikasi untuk penghuni dan staff gedung, mencakup ticketing, event, community, dan komunikasi realtime.</p>
+            <ul>
+              <li>Built resident and staff mobile features</li>
+              <li>Implemented ticket detail, timeline, and status flow</li>
+              <li>Handled image upload and preview use cases</li>
+              <li>Integrated WebSocket-based chat feature</li>
+            </ul>
+            <div class="tag-list"><span>Flutter</span><span>WebSocket</span><span>REST API</span><span>Multi-role</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Logistics / Tracking</span>
+              <i class="bi bi-truck"></i>
+            </div>
+            <h3>DMS Dino Logistics</h3>
+            <p>Aplikasi untuk mendukung operasional driver, delivery sheet, pickup, AWB, dan monitoring aktivitas logistik.</p>
+            <ul>
+              <li>Developed delivery and pickup mobile flows</li>
+              <li>Integrated operational data with backend API</li>
+              <li>Handled status update and detail shipment screens</li>
+              <li>Improved usability for field operations</li>
+            </ul>
+            <div class="tag-list"><span>Flutter</span><span>REST API</span><span>Logistics</span><span>Tracking</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Finance / Document Management</span>
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <h3>Finance Management System</h3>
+            <p>Aplikasi untuk pengelolaan dokumen finance seperti DPP/CPP, monitoring status dokumen, dan approval flow.</p>
+            <ul>
+              <li>Built list and detail document screens</li>
+              <li>Integrated finance document APIs</li>
+              <li>Handled status and approval-related UI flow</li>
+              <li>Created form validation and document monitoring views</li>
+            </ul>
+            <div class="tag-list"><span>Flutter</span><span>REST API</span><span>Finance</span><span>Approval Flow</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Personal Demo Projects</p>
+          <h2>Safe public projects for GitHub</h2>
+        </div>
+
+        <div class="demo-card">
+          <div>
+            <h3>Recommended GitHub project: Flutter Ticketing Demo</h3>
+            <p>
+              Karena source code perusahaan tidak boleh dipublikasikan, project dummy ini bisa dipakai sebagai bukti teknis.
+              Fiturnya bisa meniru pola umum ticketing tanpa memakai data, flow, endpoint, atau asset internal perusahaan.
+            </p>
+          </div>
+          <ul class="check-list two-columns">
+            <li>Login dummy</li>
+            <li>Ticket list and detail</li>
+            <li>Create ticket form</li>
+            <li>Status progress</li>
+            <li>Image upload mock</li>
+            <li>Clean Architecture</li>
+            <li>BLoC or Provider</li>
+            <li>Mock REST API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-padding bg-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Professional timeline</h2>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-marker"></div>
+          <div>
+            <p class="timeline-date">2023 - 2026</p>
+            <h3>Flutter Developer — PT Sentra Inovasi Solusindo</h3>
+            <p>
+              Mengembangkan dan maintenance aplikasi mobile Android & iOS berbasis Flutter untuk kebutuhan enterprise
+              di bidang logistics, finance, building management, dan POS.
+            </p>
+          </div>
+        </div>
+
+        <br>
+
+           <div class="timeline-card">
+          <div class="timeline-marker"></div>
+          <div>
+            <p class="timeline-date">01-01-2022 - 01-03-2022</p>
+            <h3>Web Developer — PT Agung Auto Mandiri</h3>
+            <p>
+              Mengembangkan dan maintenance website di bidang Otomotif dan membuat design UI/UX.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="confidentiality" class="section-padding">
+      <div class="container">
+        <div class="confidentiality-box">
+          <i class="bi bi-shield-lock"></i>
+          <div>
+            <h2>Confidentiality Notice</h2>
+            <p>
+              Professional project source code, internal API endpoints, credentials, database structure, and real company/customer data
+              are not publicly shared. This portfolio only explains my role, project type, feature scope, and technologies used.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in working together?</h2>
+            <p class="section-text">Saya terbuka untuk role Flutter Developer, Mobile Developer, atau Android/iOS Developer dengan Flutter sebagai stack utama.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-card">
+              <a href="mailto:juankenta4@gmail.com"><i class="bi bi-envelope"></i> juankenta4@gmail.com</a>
+              <a href="https://github.com/reyzaha" target="_blank" rel="noopener"><i class="bi bi-github"></i> github.com/reyzaha</a>
+              <a href="https://reyzaha.github.io/portofolio/" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Portfolio Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p>&copy; 2026 Juan Kenta Haryanto. All rights reserved.</p>
+      <p>Built for professional portfolio submission.</p>
     </div>
   </footer>
 
-  <!-- Back to Top -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+  <a href="#home" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- JavaScript -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
